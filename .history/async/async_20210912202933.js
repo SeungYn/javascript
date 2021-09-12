@@ -30,22 +30,10 @@ function pickFruits() {
   });
 }
 
-async function newPickFruits() {
-  const applePromise = getApple();
-  const bananaPromise = getBanana();
-  const apple = await applePromise;
-  const banana = await bananaPromise;
-  return `${apple} + ${banana}`;
+function newPickFruite() {
+  const apple = await getApple();
+  const banana = await getBanana();
+  return `${apple} + ${Banana}`;
 }
 
-newPickFruits().then(console.log);
-
-//3. useful Promise APIs
-
-function pickAllFruits() {
-  return Promise.all([getApple(), getBanana()]).then((fruits) =>
-    fruits.join('+')
-  );
-}
-
-pickAllFruits().then(console.log);
+newpickFruits().then(console.log);

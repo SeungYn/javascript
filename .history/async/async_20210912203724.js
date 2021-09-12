@@ -47,5 +47,3 @@ function pickAllFruits() {
     fruits.join('+')
   );
 }
-
-pickAllFruits().then(console.log);
